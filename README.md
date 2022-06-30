@@ -8,7 +8,7 @@ Este treinamento de Git foi feito para o evento da FIEC em parceria com a Vilt. 
 
 ### Download
 
-Baixar o Git é fácil! Basta entrar em git-scm.com(https://git-scm.com/downloads), baixar a última versão e seguir os passos para a instalação. Bem intuitivo.
+Baixar o Git é fácil! Basta entrar em [git-scm.com](https://git-scm.com/downloads), baixar a última versão e seguir os passos para a instalação. Bem intuitivo.
 
 ### Configuração
 
@@ -100,6 +100,8 @@ git push origin minha-branch
 
 É importante usarmos o origin antes da nossa branch, porque algumas vezes vamos trabalhar com branches de mesmo nome, sendo uma em cloud e outra a origin. É bom se acostumar a sempre especificar qual branch você quer puxar ou empurrar conteúdos.
 
+#### :pencil2: Conferindo as mudanças
+
 Pronto! Agora suas atualizações podem ser acessados por qualquer desenvolvedor. Para verificarmos se o nosso commit foi realmente efetuado usamos o seguinte comando:
 
 ```bat
@@ -107,6 +109,8 @@ git log
 ```
 
 O git log nos ajuda a ver todo o histórico de commits da branch, desde o seu "nascimento" na master. Também podemos ver os commits em outras plataformas, como Github, o Gitlab e o Bitbucket, mas quando não tivermos essas plataformas para nos ajudarmos é bom usar o git log e conferir se está tudo certinho.
+
+#### :pencil2: Mesclando branches
 
 Trabalho concluído e agora é hora de fazer o merge da sua branch na branch master! O merge é quando mesclamos uma branch na outra, levando todas as nossas atualizações para outra branch.
 
@@ -119,3 +123,14 @@ git merge minha-branch
 ```
 
 Dessa forma estaremos mesclando a nossa branch (minha-branch) dentro da branch master e teremos todas as atualizações!
+
+#### :pencil2: Salvando alterações sem fazer commit
+
+Agora que já entendemos o que são commits e sabemos que temos um histórico deles quando rodamos o comando `git log`, surge uma nova dúvida: o que fazer quando estamos trabalhando em uma atualização, mas ainda não terminamos e precisamos resolver algo em outra branch rapidamente? Se você já foi interrompido(a) fazendo alterações em uma branch sabe que o git não permite que mudemos de uma branch para outro com atualização "a commitar", ou seja, pendentes.
+Para que nós não perdamos essas modificações, podemos usar o seguinte comando:
+
+```
+git stash
+```
+
+O git stash serve para salvarmos em uma fração da memória do computador nossas alterações sem commitar elas. Esse comando é bem útil quando estamos escrevendo algo que ainda não traz nenhum benefício para o nosso código, mas não queremos perder o que começamos. Para aplicar o que estava em stash usamos o comando `git stash apply`. Também é possível listar quantos stashs foram feitos através do `git stash list` ou limpar os stashs com `git stash clear`.
