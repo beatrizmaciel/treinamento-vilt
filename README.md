@@ -134,3 +134,5 @@ git stash
 ```
 
 O git stash serve para salvarmos em uma fração da memória do computador nossas alterações sem commitar elas. Esse comando é bem útil quando estamos escrevendo algo que ainda não traz nenhum benefício para o nosso código, mas não queremos perder o que começamos. Para aplicar o que estava em stash usamos o comando `git stash apply`. Também é possível listar quantos stashs foram feitos através do `git stash list` ou limpar os stashs com `git stash clear`.
+
+:sparkles:
