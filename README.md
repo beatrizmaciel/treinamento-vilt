@@ -71,7 +71,7 @@ O `git checkout` serve para sairmos de uma branch e entrarmos em outra, mas quan
 
 :heavy_exclamation_mark: Importante! Usamos um padrão para criarmos novas branches. Geralmente usamos `feature/` , `bug/` ou `hotfix/` antes do nome da nossa branch e esses acordos precisam ser feitos a priori com o time. Cada equipe se organiza de uma forma diferente, mas tenha em mente que quando criamos um novo componente ou versão usamos `feature/minha-branch`. Se estamos consertando um bug, `bug/minha-branch` e se é um hot fix, ou seja, uma melhoria urgente, usamos `hotfix/minha-branch`.
 
-Depois de criarmos nossa branch vamos fazer as modificações necessárias em casa arquivo. Uma vez que terminamos de fazer as atualizações podemos adicionar nossa nova versão de código na nossa branch. Para isso, abrimos o terminal git bash e conferimos quais arquivos foram modificados com o seguinte comando:
+Depois de criarmos nossa branch vamos fazer as modificações necessárias em cada arquivo. Uma vez que terminamos de fazer as atualizações podemos adicionar nossa nova versão de código na nossa branch. Para isso, abrimos o terminal git bash e conferimos quais arquivos foram modificados com o seguinte comando:
 
 ```bat
 git status
@@ -114,7 +114,7 @@ O git log nos ajuda a ver todo o histórico de commits da branch, desde o seu "n
 
 Trabalho concluído e agora é hora de fazer o merge da sua branch na branch master! O merge é quando mesclamos uma branch na outra, levando todas as nossas atualizações para outra branch.
 
-:heavy_exclamation_mark: Importante! Fazer o merge com outra branch pode ser um pouco complicado nas primeiras vezes, então é importante avisar os colegas que você fará esse movimento. Muitas vezes também precisamos resolver conflitos entre a nossa branch e a branch master (ou qualquer outra branch que vamos mesclar). É preciso ficar atento para não deixar bugs e erros passarem nesse momento. Faça tudo com orientação das primeiras vezes
+:heavy_exclamation_mark: Importante! Fazer o merge com outra branch pode ser um pouco complicado nas primeiras vezes, então é importante avisar os colegas que você fará esse movimento. Muitas vezes também precisamos resolver conflitos entre a nossa branch e a branch master (ou qualquer outra branch que vamos mesclar). É preciso ficar atento para não deixar bugs e erros passarem nesse momento. Faça tudo com orientação das primeiras vezes.
 
 Vamos pensar numa situação imaginária: pense que você quer levar todas as atualizações da minha-branch para a branch master. Para fazer isso nós vamos fazer `git checkout master`, onde vamos mudar para a branch master. Depois disso, rodaremos o seguinte comando:
 
