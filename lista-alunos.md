@@ -1,7 +1,7 @@
 ## Lista de Alunos do treinamento VILT
 
 - [Beatriz Fontes](https://github.com/BiaFontes)
-  [juancassiano](https://github.com/juancassiano)
+- [juancassiano](https://github.com/juancassiano)
 - [Roberta Lorena Bernardo Cruz](https://github.com/rlbernardo)
 - [Isabelly Monteiro](https://github.com/isabellymonteiro) 🙋‍♀️
 - [Paulo Henrique](https://github.com/zPauloH)
